@@ -1,0 +1,196 @@
+#wpcontent {
+    background-image:url(images/xv.png);
+    margin:0 0 0 140px;}
+
+#wpbody-content {
+    margin:0;
+    padding:0;
+    text-align:center;
+    width:100%;}
+
+#wpfooter {
+    display:none;}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+    font-size:.95em;
+    text-align:left;
+    margin:1em 0;
+    padding:1em 0;
+    width:100%;}
+
+tbody tr:nth-child(odd) {
+   background:#EEE;
+   background:rgba(0, 0, 0, 0.04);
+   border:none;}
+
+tbody tr:first-of-type {
+   background:rgba(0, 0, 0, 0.1);}
+
+td {
+    border-top:.1em solid #aaa;
+    border-right:.1em solid #aaa;
+    padding:.8em;}
+
+th {border-right:.1em solid #aaa;
+    padding:.8em;
+    text-align:center;}
+
+td:last-child {text-align:center;}
+
+tr td:last-child {border-right:none;}
+
+tr th:last-child {border-right:none;}
+
+.theme-wrap {
+    background:#FFF;
+    border:.0625em solid #E5E5E5;
+    box-shadow:0 0 1em rgba(19,19,19,.15);
+    font-family: "Open Sans:300",sans-serif;
+	font-size:.824em;
+    margin:6em auto;
+    padding:1.5em 2.35em 2.35em;
+    text-align:justify;
+    width:60em;}
+
+.theme-wrap .screenshot,
+.theme-wrap .upgrade-summary,
+.theme-wrap .entry-summary,
+.theme-wrap .theme-head,
+.theme-wrap .theme-rating,
+.theme-wrap .theme-support,
+.theme-wrap .theme-translations,
+.theme-wrap .theme-dev {
+    margin-bottom:3.333em;}
+
+.theme-wrap a {
+    text-decoration:none;
+	transition:color 0.12s ease-in-out;}
+
+.theme-wrap h1,
+.theme-wrap h2,
+.theme-wrap h3,
+.theme-wrap h4,
+.theme-wrap h5,
+.theme-wrap h6 {
+    margin:0;
+    padding:0;}
+
+.theme-wrap p {
+    font-size:1em;}
+
+.clear:after {
+     clear:both;
+     content:" ";
+     display:block;
+     font-size:0;
+     height:0;
+     visibility:hidden;}
+
+.theme-wrap .entry-title {
+    display:inline-block;
+    font-size:2.4em;
+    font-weight:300;
+    line-height:1.3em;
+    margin-bottom:.5555em;}
+
+.theme-wrap .theme-author {
+    border:none;
+    color:#686868;
+    display:inline-block;
+    font-size:.933em;
+    font-style:italic;
+    margin:0 .357em;}
+
+.theme-wrap .theme-author a {
+    font-weight:400;}
+
+.theme-wrap .theme-info {
+    float:left;
+    width:38em;}
+
+.theme-wrap .screenshot {
+    border:.0625em solid #FFF;
+    box-shadow:0 0 0 .06667em rgba(0, 0, 0, 0.2);
+    overflow:hidden;}
+
+.theme-wrap .screenshot img {
+    height:auto;
+    width:100%;}
+
+.theme-wrap h4 {
+    font-weight: bold;
+    font-size:1.0667em;
+    border-bottom: 1px solid #DEDEDE;
+    padding-bottom: 4px;
+    color: #23282D;
+    margin-bottom:18px;}
+
+.theme-wrap h5 {
+    font-size:1em;}
+
+.theme-wrap .theme-head,
+.theme-wrap .theme-meta {
+    float:right;
+    font-size:.933em;
+    width:20.75em;}
+
+.theme-wrap .button {
+    font-size:1em;
+    height:2.769em;
+    line-height:2.769em;
+    text-align:center;
+    min-width:10em;}
+
+.holy-cannoli {
+    position:relative;}
+
+.chris-farley {
+    background-image:url(images/chris-farley-holy-cannoli.gif);
+    background-position:center center;
+    background-size:cover;
+    border-radius:2.5%;
+    display:none;
+    font-size:2em;
+    height:10em;
+    left:-16em;
+    position:absolute;
+    top:-5em;
+    width:14em;}
+
+.holy-cannoli:hover .chris-farley {
+    display:block;}
+
+@media all and (min-width:085em) {body {font:normal 113.75% "Open Sans:300",sans-serif;}}
+@media all and (min-width:090em) {body {font:normal 120.00% "Open Sans:300",sans-serif;}}
+@media all and (min-width:095em) {body {font:normal 126.25% "Open Sans:300",sans-serif;}}
+@media all and (min-width:100em) {body {font:normal 132.50% "Open Sans:300",sans-serif;}}
+@media all and (min-width:105em) {body {font:normal 138.75% "Open Sans:300",sans-serif;}}
+@media all and (min-width:110em) {body {font:normal 145.00% "Open Sans:300",sans-serif;}}
+@media all and (min-width:115em) {body {font:normal 151.25% "Open Sans:300",sans-serif;}}
+@media all and (min-width:120em) {body {font:normal 157.50% "Open Sans:300",sans-serif;}}
+@media all and (min-width:125em) {body {font:normal 163.75% "Open Sans:300",sans-serif;}}
+@media all and (min-width:130em) {body {font:normal 170.00% "Open Sans:300",sans-serif;}}
+@media all and (min-width:135em) {body {font:normal 176.25% "Open Sans:300",sans-serif;}}
+@media all and (min-width:140em) {body {font:normal 182.50% "Open Sans:300",sans-serif;}}
+@media all and (min-width:145em) {body {font:normal 188.75% "Open Sans:300",sans-serif;}}
+@media all and (min-width:150em) {body {font:normal 195.00% "Open Sans:300",sans-serif;}}
+@media all and (min-width:155em) {body {font:normal 201.25% "Open Sans:300",sans-serif;}}
+@media all and (min-width:160em) {body {font:normal 207.50% "Open Sans:300",sans-serif;}}
+@media all and (min-width:165em) {body {font:normal 213.75% "Open Sans:300",sans-serif;}}
+@media all and (min-width:170em) {body {font:normal 220.00% "Open Sans:300",sans-serif;}}
+@media all and (min-width:175em) {body {font:normal 226.25% "Open Sans:300",sans-serif;}}
+@media all and (min-width:180em) {body {font:normal 232.50% "Open Sans:300",sans-serif;}}
+@media all and (min-width:195em) {body {font:normal 238.75% "Open Sans:300",sans-serif;}}
+@media all and (min-width:200em) {body {font:normal 245.00% "Open Sans:300",sans-serif;}}
+@media all and (min-width:210em) {body {font:normal 257.50% "Open Sans:300",sans-serif;}}
+@media all and (min-width:220em) {body {font:normal 270.00% "Open Sans:300",sans-serif;}}
+@media all and (min-width:230em) {body {font:normal 282.50% "Open Sans:300",sans-serif;}}
+@media all and (min-width:240em) {body {font:normal 295.00% "Open Sans:300",sans-serif;}}
+@media all and (min-width:250em) {body {font:normal 307.50% "Open Sans:300",sans-serif;}}
+@media all and (min-width:260em) {body {font:normal 320.00% "Open Sans:300",sans-serif;}}
+@media all and (min-width:270em) {body {font:normal 332.50% "Open Sans:300",sans-serif;}}
+@media all and (min-width:280em) {body {font:normal 345.00% "Open Sans:300",sans-serif;}}
+@media all and (min-width:290em) {body {font:normal 357.50% "Open Sans:300",sans-serif;}}
+@media all and (min-width:300em) {body {font:normal 370.00% "Open Sans:300",sans-serif;}}
