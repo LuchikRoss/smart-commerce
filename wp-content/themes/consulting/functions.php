@@ -243,3 +243,9 @@ function consulting_thinkup_widgets_init() {
     ) );
 }
 add_action( 'widgets_init', 'consulting_thinkup_widgets_init' );
+	
+add_action( 'WooCommerce_before_header', 'art_wp_before_header');
+
+	function art_wp_before_header (){
+		echo 'Мой первый хук';
+	}
