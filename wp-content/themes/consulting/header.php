@@ -25,7 +25,7 @@
 	<header>
 	<div id="site-header">
 		
-		<?php do_action ( 'WooCommerce_before_header' ); ?>
+		<?php do_action ( 'woocommerce_before_header' ); ?>
 		
 		<?php if ( get_header_image() ) : ?>
 			<div class="custom-header"><img src="<?php header_image(); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt=""></div>
