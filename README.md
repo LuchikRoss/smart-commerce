@@ -1,6 +1,6 @@
 
 Cloud9 IDE!
 
-http://docs.c9.io
+https://smart-commerce-c9-luchikross.c9users.io/
 
 "it online store from cloud. have fun!"

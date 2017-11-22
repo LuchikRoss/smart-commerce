@@ -247,5 +247,21 @@ add_action( 'widgets_init', 'consulting_thinkup_widgets_init' );
 add_action( 'woocommerce_before_header', 'art_wp_before_header');
 
 	function art_wp_before_header (){
-		echo 'Мой первый хук: woocommerce_before_header (action)';
+		echo 'Мой первый хук: woocommerce_before_header';
 	}
+	
+	
+$page_title='My New Settings Page';
+$menu_title='New Settings';
+$capability='manage_options';
+$menu_slug='site-options';
+$function='add_my_setting';
+$icon_url='';
+$position=4;
+
+add_action( 'new_admin_menu', 'register_my_custom_menu_page' );
+
+function register_my_custom_menu_page(){
+	add_menu_page( $page_title, $menu_title, $capability, $menu_slug, 'myplugin/myplugin-admin.php', '', plugins_url( 'myplugin/images/icon.png' ), 6 
+	);
+}
