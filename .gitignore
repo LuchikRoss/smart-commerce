@@ -1,2 +1,3 @@
 *.log
 wp-content/plugins/hello.php
+ember-quickstart/

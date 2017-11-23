@@ -3952,3 +3952,65 @@
 [17-Nov-2017 11:33:49 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/wp-includes/class-wp-hook.php:286}(*uninitialized*, *uninitialized*) /home/ubuntu/workspace/wp-includes/class-wp-hook.php:286
 [17-Nov-2017 11:33:49 UTC] PHP   7. wp_admin_headers(*uninitialized*) /home/ubuntu/workspace/wp-includes/class-wp-hook.php:286
 [17-Nov-2017 11:33:49 UTC] PHP   8. header(*uninitialized*) /home/ubuntu/workspace/wp-admin/includes/misc.php:1114
+[23-Nov-2017 14:07:23 UTC] PHP Catchable fatal error:  Object of class WP_User could not be converted to string in /home/ubuntu/workspace/wp-content/plugins/example-plugin-1/index.php on line 23
+[23-Nov-2017 14:07:23 UTC] PHP Stack trace:
+[23-Nov-2017 14:07:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin.php:0
+[23-Nov-2017 14:07:23 UTC] PHP   2. do_action() /home/ubuntu/workspace/wp-admin/admin.php:224
+[23-Nov-2017 14:07:23 UTC] PHP   3. WP_Hook->do_action() /home/ubuntu/workspace/wp-includes/plugin.php:453
+[23-Nov-2017 14:07:23 UTC] PHP   4. WP_Hook->apply_filters() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:310
+[23-Nov-2017 14:07:23 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-includes/class-wp-hook.php:286}() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:286
+[23-Nov-2017 14:07:23 UTC] PHP   6. exampleMenu() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:286
+[23-Nov-2017 14:07:36 UTC] PHP Catchable fatal error:  Object of class WP_User could not be converted to string in /home/ubuntu/workspace/wp-content/plugins/example-plugin-1/index.php on line 23
+[23-Nov-2017 14:07:36 UTC] PHP Stack trace:
+[23-Nov-2017 14:07:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin.php:0
+[23-Nov-2017 14:07:36 UTC] PHP   2. do_action() /home/ubuntu/workspace/wp-admin/admin.php:224
+[23-Nov-2017 14:07:36 UTC] PHP   3. WP_Hook->do_action() /home/ubuntu/workspace/wp-includes/plugin.php:453
+[23-Nov-2017 14:07:36 UTC] PHP   4. WP_Hook->apply_filters() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:310
+[23-Nov-2017 14:07:36 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-includes/class-wp-hook.php:286}() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:286
+[23-Nov-2017 14:07:36 UTC] PHP   6. exampleMenu() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:286
+[23-Nov-2017 14:08:08 UTC] PHP Catchable fatal error:  Object of class WP_User could not be converted to string in /home/ubuntu/workspace/wp-content/plugins/example-plugin-1/index.php on line 23
+[23-Nov-2017 14:08:08 UTC] PHP Stack trace:
+[23-Nov-2017 14:08:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin.php:0
+[23-Nov-2017 14:08:08 UTC] PHP   2. do_action() /home/ubuntu/workspace/wp-admin/admin.php:224
+[23-Nov-2017 14:08:08 UTC] PHP   3. WP_Hook->do_action() /home/ubuntu/workspace/wp-includes/plugin.php:453
+[23-Nov-2017 14:08:08 UTC] PHP   4. WP_Hook->apply_filters() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:310
+[23-Nov-2017 14:08:08 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-includes/class-wp-hook.php:286}() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:286
+[23-Nov-2017 14:08:08 UTC] PHP   6. exampleMenu() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:286
+[23-Nov-2017 14:08:37 UTC] PHP Catchable fatal error:  Object of class WP_User could not be converted to string in /home/ubuntu/workspace/wp-content/plugins/example-plugin-1/index.php on line 23
+[23-Nov-2017 14:08:37 UTC] PHP Stack trace:
+[23-Nov-2017 14:08:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin.php:0
+[23-Nov-2017 14:08:37 UTC] PHP   2. do_action() /home/ubuntu/workspace/wp-admin/admin.php:224
+[23-Nov-2017 14:08:37 UTC] PHP   3. WP_Hook->do_action() /home/ubuntu/workspace/wp-includes/plugin.php:453
+[23-Nov-2017 14:08:37 UTC] PHP   4. WP_Hook->apply_filters() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:310
+[23-Nov-2017 14:08:37 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-includes/class-wp-hook.php:286}() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:286
+[23-Nov-2017 14:08:37 UTC] PHP   6. exampleMenu() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:286
+[23-Nov-2017 14:10:16 UTC] PHP Catchable fatal error:  Object of class WP_User could not be converted to string in /home/ubuntu/workspace/wp-content/plugins/example-plugin-1/index.php on line 23
+[23-Nov-2017 14:10:16 UTC] PHP Stack trace:
+[23-Nov-2017 14:10:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin.php:0
+[23-Nov-2017 14:10:16 UTC] PHP   2. do_action() /home/ubuntu/workspace/wp-admin/admin.php:224
+[23-Nov-2017 14:10:16 UTC] PHP   3. WP_Hook->do_action() /home/ubuntu/workspace/wp-includes/plugin.php:453
+[23-Nov-2017 14:10:16 UTC] PHP   4. WP_Hook->apply_filters() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:310
+[23-Nov-2017 14:10:16 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-includes/class-wp-hook.php:286}() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:286
+[23-Nov-2017 14:10:16 UTC] PHP   6. exampleMenu() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:286
+[23-Nov-2017 14:12:39 UTC] PHP Catchable fatal error:  Object of class WP_User could not be converted to string in /home/ubuntu/workspace/wp-content/plugins/example-plugin-1/index.php on line 23
+[23-Nov-2017 14:12:39 UTC] PHP Stack trace:
+[23-Nov-2017 14:12:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin.php:0
+[23-Nov-2017 14:12:39 UTC] PHP   2. do_action() /home/ubuntu/workspace/wp-admin/admin.php:224
+[23-Nov-2017 14:12:39 UTC] PHP   3. WP_Hook->do_action() /home/ubuntu/workspace/wp-includes/plugin.php:453
+[23-Nov-2017 14:12:39 UTC] PHP   4. WP_Hook->apply_filters() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:310
+[23-Nov-2017 14:12:39 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-includes/class-wp-hook.php:286}() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:286
+[23-Nov-2017 14:12:39 UTC] PHP   6. exampleMenu() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:286
+[23-Nov-2017 14:18:47 UTC] PHP Catchable fatal error:  Object of class WP_User could not be converted to string in /home/ubuntu/workspace/wp-content/plugins/example-plugin-1/index.php on line 24
+[23-Nov-2017 14:18:47 UTC] PHP Stack trace:
+[23-Nov-2017 14:18:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin.php:0
+[23-Nov-2017 14:18:47 UTC] PHP   2. do_action() /home/ubuntu/workspace/wp-admin/admin.php:224
+[23-Nov-2017 14:18:47 UTC] PHP   3. WP_Hook->do_action() /home/ubuntu/workspace/wp-includes/plugin.php:453
+[23-Nov-2017 14:18:47 UTC] PHP   4. WP_Hook->apply_filters() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:310
+[23-Nov-2017 14:18:47 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-includes/class-wp-hook.php:286}() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:286
+[23-Nov-2017 14:18:47 UTC] PHP   6. exampleMenu() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:286
+[23-Nov-2017 14:23:14 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/ubuntu/workspace/wp-content/plugins/example-plugin-1/index.php on line 24
+[23-Nov-2017 14:23:14 UTC] PHP Stack trace:
+[23-Nov-2017 14:23:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin.php:0
+[23-Nov-2017 14:23:14 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin.php:31
+[23-Nov-2017 14:23:14 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[23-Nov-2017 14:23:14 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92

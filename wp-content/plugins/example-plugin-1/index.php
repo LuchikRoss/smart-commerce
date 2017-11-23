@@ -13,16 +13,24 @@ function addMenu()
 {
 	add_menu_page("Example Options", "Example Options", 4, "example-options", "exampleMenu");
 	add_submenu_page("example-options", "Option 1", "Option 1", 4, "example-option-1", "option1");
+	add_submenu_page("example-options", "Option 2", "Option 2", 4, "example-option-2", "option2");
 }
 
 function exampleMenu()
 {
-	echo "Hello World!";
+	echo "Example Options";
+	global $wp_version;
+	echo "<br />The installed version of WordPress (Global Variables): " . $wp_version;
 }
 
 function option1()
 {
-	echo "its first option for example";
+	echo "first option for example";
+}
+
+function option2()
+{
+	echo "second option for example";
 }
 
 
@@ -57,3 +65,5 @@ function connected_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'connected_scripts' );
+
+
