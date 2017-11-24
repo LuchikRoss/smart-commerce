@@ -244,3 +244,32 @@ function consulting_thinkup_widgets_init() {
 }
 add_action( 'widgets_init', 'consulting_thinkup_widgets_init' );
 	
+	function connected_scripts() {
+		wp_enqueue_style( 'connected-style', get_stylesheet_uri() );
+		wp_register_style( 'my-style', plugins_url('example-plugin-1/css') . '/my-style.css' );
+		wp_enqueue_style( 'my-style', plugins_url('example-plugin-1/css') . '/my-style.css' );
+		wp_register_script( 'my-script', plugins_url('example-plugin-1/js') . '/example.js', array('jquery'), false, true );
+		wp_enqueue_script( 'my-script', plugins_url('example-plugin-1/js') . '/example.js', array('jquery'), false, true );
+		
+		wp_add_inline_script('my-script', 'alert("add_inline_script: Hi there. Have fun!")');
+		wp_add_inline_style('my-style', 'body{background: rgb(111,111,111);}');
+		
+		wp_deregister_script( 'my-script' );
+		wp_enqueue_script( 'my-script', plugins_url('example-plugin-1/js') . '/example.js', array('jquery'), false, true );
+		wp_add_inline_script('my-script', 'alert("add_inline_script: Hi there. Have fun!")');
+		
+		wp_deregister_style( 'my-style' );
+		wp_enqueue_style( 'my-style', plugins_url('example-plugin-1/css') . '/my-style.css' );
+		wp_add_inline_style('my-style', 'body{background: rgb(111,111,111);}');
+	}
+add_action( 'wp_enqueue_scripts', 'connected_scripts' );
+
+	function art_wp_before_header (){
+		echo 'hook: woocommerce_before_header';
+	}
+add_action( 'woocommerce_before_header', 'art_wp_before_header');
+
+	function example_fun_shortcode (){
+		return "<p>My first shortcode</p>";
+	}
+add_shortcode( 'example-shortcode', 'example-fun-shortcode');
