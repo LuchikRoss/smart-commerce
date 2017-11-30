@@ -246,30 +246,47 @@ add_action( 'widgets_init', 'consulting_thinkup_widgets_init' );
 	
 	function connected_scripts() {
 		wp_enqueue_style( 'connected-style', get_stylesheet_uri() );
-		wp_register_style( 'my-style', plugins_url('example-plugin-1/css') . '/my-style.css' );
-		wp_enqueue_style( 'my-style', plugins_url('example-plugin-1/css') . '/my-style.css' );
-		wp_register_script( 'my-script', plugins_url('example-plugin-1/js') . '/example.js', array('jquery'), false, true );
-		wp_enqueue_script( 'my-script', plugins_url('example-plugin-1/js') . '/example.js', array('jquery'), false, true );
+		wp_register_style( 'my-style', plugins_url( 'example-plugin-1/css' ) . '/my-style.css' );
+		wp_enqueue_style( 'my-style', plugins_url( 'example-plugin-1/css' ) . '/my-style.css' );
+		wp_register_script( 'my-script', plugins_url( 'example-plugin-1/js' ) . '/example.js', array( 'jquery' ), false, true );
+		wp_enqueue_script( 'my-script', plugins_url( 'example-plugin-1/js' ) . '/example.js', array( 'jquery' ), false, true );
 		
-		wp_add_inline_script('my-script', 'alert("add_inline_script: Hi there. Have fun!")');
-		wp_add_inline_style('my-style', 'body{background: rgb(111,111,111);}');
+		wp_add_inline_script( 'my-script', 'alert("add_inline_script: Hi there. Have fun!")' );
+		wp_add_inline_style( 'my-style', 'body{background: rgb(111,111,111);}' );
 		
 		wp_deregister_script( 'my-script' );
-		wp_enqueue_script( 'my-script', plugins_url('example-plugin-1/js') . '/example.js', array('jquery'), false, true );
-		wp_add_inline_script('my-script', 'alert("add_inline_script: Hi there. Have fun!")');
+		wp_enqueue_script( 'my-script', plugins_url( 'example-plugin-1/js' ) . '/example.js', array( 'jquery' ), false, true );
+		//wp_add_inline_script('my-script', 'alert( "add_inline_script: Hi there. Have fun!" )' );
+		//wp_deregister_script( 'my-script' );
 		
 		wp_deregister_style( 'my-style' );
-		wp_enqueue_style( 'my-style', plugins_url('example-plugin-1/css') . '/my-style.css' );
-		wp_add_inline_style('my-style', 'body{background: rgb(111,111,111);}');
-	}
+		wp_enqueue_style( 'my-style', plugins_url('example-plugin-1/css' ) . '/my-style.css' );
+		wp_add_inline_style( 'my-style', 'body{background: rgb(111,111,111);}' );
+}
 add_action( 'wp_enqueue_scripts', 'connected_scripts' );
 
 	function art_wp_before_header (){
-		echo 'hook: woocommerce_before_header';
-	}
-add_action( 'woocommerce_before_header', 'art_wp_before_header');
+		echo 'SmartCommerce';
+}
+add_action( 'woocommerce_before_header', 'art_wp_before_header' );
 
-	function example_fun_shortcode (){
-		return "<p>My first shortcode</p>";
-	}
-add_shortcode( 'example-shortcode', 'example-fun-shortcode');
+	function true_misha_func( $atts ){
+		return "<center><p><b>адрес сайта с помощью шорткода ========(" . site_url() . ")========</b></p></center>"; // никаких echo, только return
+}
+add_shortcode( 'misha', 'true_misha_func' );
+
+	function true_url_external( $atts ) {
+		$params = shortcode_atts( array( // в массиве укажите значения параметров по умолчанию
+			'anchor' => 'Стартовая страничка', // параметр 1
+			'url' => 'https://smart-commerce-c9-luchikross.c9users.io', // параметр 2
+		), $atts );
+	return "<center><p><a href='{$params['url']}' target='_blank'>{$params['anchor']}</a></p></center>";
+}
+add_shortcode( 'trueurl', 'true_url_external' );
+
+	function example_fun_shortcode ( $atts ){
+			return "<p>My first shortcode</p>";
+		}
+add_shortcode( 'example-shortcode', 'example_fun_shortcode' );
+
+

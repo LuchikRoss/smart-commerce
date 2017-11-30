@@ -1,1 +1,0 @@
-<?php //Deprecated file ?>
