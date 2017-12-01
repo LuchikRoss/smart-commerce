@@ -265,15 +265,15 @@ add_action( 'widgets_init', 'consulting_thinkup_widgets_init' );
 }
 add_action( 'wp_enqueue_scripts', 'connected_scripts' );
 
-	function art_wp_before_header (){
-		echo 'SmartCommerce';
-}
-add_action( 'woocommerce_before_header', 'art_wp_before_header' );
+//	function art_wp_before_header (){
+//		echo 'SmartCommerce';
+//}
+//add_action( 'woocommerce_before_header', 'art_wp_before_header' );
 
-	function true_misha_func( $atts ){
+	function true_ross_func( $atts ){
 		return "<center><p><b>адрес сайта с помощью шорткода ========(" . site_url() . ")========</b></p></center>"; // никаких echo, только return
 }
-add_shortcode( 'misha', 'true_misha_func' );
+add_shortcode( 'ross', 'true_ross_func' );
 
 	function true_url_external( $atts ) {
 		$params = shortcode_atts( array( // в массиве укажите значения параметров по умолчанию
@@ -290,3 +290,27 @@ add_shortcode( 'trueurl', 'true_url_external' );
 add_shortcode( 'example-shortcode', 'example_fun_shortcode' );
 
 
+ 
+add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
+  
+function custom_override_checkout_fields( $fields ) {
+	
+//unset($fields['billing']['billing_first_name']);
+unset($fields['billing']['billing_last_name']);
+unset($fields['billing']['billing_company']);
+unset($fields['billing']['billing_address_1']);
+unset($fields['billing']['billing_address_2']);
+unset($fields['billing']['billing_city']);
+unset($fields['billing']['billing_postcode']);
+unset($fields['billing']['billing_country']);
+unset($fields['billing']['billing_state']);
+//unset($fields['billing']['billing_phone']);
+//unset($fields['order']['order_comments']);
+unset($fields['billing']['billing_email']);
+unset($fields['account']['account_username']);
+unset($fields['account']['account_password']);
+unset($fields['account']['account_password-2']);
+ 
+    return $fields;
+}
+ 

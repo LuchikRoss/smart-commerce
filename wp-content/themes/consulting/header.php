@@ -16,7 +16,7 @@
 <link rel="profile" href="//gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php esc_url( bloginfo( 'pingback_url' ) ); ?>" />
 
-<?php wp_head(); ?>
+<?php wp_head(); ?> 
 </head>
 
 <body <?php body_class(); ?>>
@@ -92,3 +92,5 @@
 
 		<div id="main">
 		<div id="main-core">
+			
+			
